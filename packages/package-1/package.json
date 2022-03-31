@@ -16,8 +16,8 @@
   ],
   "scripts": {
     "build": "npx rollup -c",
-    "bump-version:patch": "npm version patch --no-git-tag && npm run build",
-    "bump-version:minor": "npm version minor --no-git-tag && npm run build"
+    "bump-version:patch": "yarn version --patch --no-git-tag-version && yarn run build",
+    "bump-version:minor": "yarn version --minor --no-git-tag-version && yarn run build"
   },
   "devDependencies": {
     "rollup": "^2.70.1"

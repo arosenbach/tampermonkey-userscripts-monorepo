@@ -1,0 +1,25 @@
+{
+  "name": "package-1",
+  "version": "1.0.3",
+  "type": "module",
+  "description": "> TODO: description",
+  "author": "Antoine Rosenbach <github@rbch.ovh>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/package-1.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "npx rollup -c",
+    "bump-version:patch": "npm version patch --no-git-tag && npm run build",
+    "bump-version:minor": "npm version minor --no-git-tag && npm run build"
+  },
+  "devDependencies": {
+    "rollup": "^2.70.1"
+  }
+}

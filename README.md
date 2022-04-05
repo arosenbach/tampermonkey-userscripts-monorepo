@@ -1,13 +1,23 @@
 # Tampermonkey UserScripts monorepo
 
-## In the root directory
+## Usage
+
+### Initialize a new script
 
 ```bash
-lerna create <script-name>  # creates a new script skeleton in packages/ 
+lerna create <script-name>
+```
+or 
+```bash
+mkdir packages/<script-name>
+cp -r packages/_sample/ packages/<script-name>
 ```
 
+Then edit `packages/<script-name>/package.json`.
 
-## In packages
+
+### Usefull commands
+
 
 ```bash
 yarn build                    # generate the script file with UserScript header

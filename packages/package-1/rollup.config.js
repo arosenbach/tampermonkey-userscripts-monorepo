@@ -1,17 +1,21 @@
 
 import fs from "fs";
 
-const getBannerText = () => {
+const getUserScriptMeta = () => {
     const packageJson = JSON.parse(fs.readFileSync("./package.json", "utf-8"));
+    const meta = fs.readFileSync("./src/meta.js", "utf-8")
+                        .split('\n')
+                        .map(line => line.trim())
+                        .filter(line => !line.match(/==(\/)?UserScript==/))
+                        .filter(line => line.startsWith('//'))
+                        .join('\n');
+                        
     return `// ==UserScript==
 // @name         ${packageJson.name}
-// @namespace    http://tampermonkey.net/
 // @version      ${packageJson.version}
 // @description  ${packageJson.description}
 // @author       ${packageJson.author}
-// @match        https://duckduckgo.com/?q=tes&atb=v314-7&ia=web
-// @icon         https://www.google.com/s2/favicons?sz=64&domain=duckduckgo.com
-// @grant        none
+${meta}
 // ==/UserScript== 
 `;
 }
@@ -42,7 +46,7 @@ export default {
         dir: 'dist',
         format: "iife",
         sourcemap: false,
-        banner: getBannerText,
+        banner: getUserScriptMeta,
     },
     // plugins: [headerInjecter()]
 }

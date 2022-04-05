@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         package-1
-// @namespace    http://tampermonkey.net/
 // @version      1.0.3
 // @description  > TODO: description
 // @author       Antoine Rosenbach <github@rbch.ovh>
+// @namespace    http://tampermonkey.net/
 // @match        https://duckduckgo.com/?q=tes&atb=v314-7&ia=web
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=duckduckgo.com
 // @grant        none

@@ -4,7 +4,7 @@
   "type": "module",
   "description": "This is a sample script",
   "author": "Antoine Rosenbach <github@rbch.ovh>",
-  "homepage": "",
+  "homepage": "https://github.com/arosenbach/tampermonkey-userscripts-monorepo#readme",
   "license": "ISC",
   "scripts": {
     "build": "npx rollup -c",

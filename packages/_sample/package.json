@@ -1,19 +1,11 @@
 {
-  "name": "package-1",
-  "version": "1.0.3",
+  "name": "sample",
+  "version": "1.0.0",
   "type": "module",
-  "description": "> TODO: description",
+  "description": "This is a sample script",
   "author": "Antoine Rosenbach <github@rbch.ovh>",
   "homepage": "",
   "license": "ISC",
-  "main": "lib/package-1.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
-  "files": [
-    "lib"
-  ],
   "scripts": {
     "build": "npx rollup -c",
     "bump-version:patch": "yarn version --patch --no-git-tag-version && yarn run build",

@@ -1,6 +1,6 @@
-# `package-1`
+# `Sample Script`
 
-> TODO: description
+This is a sample script
 
 ## Usage
 

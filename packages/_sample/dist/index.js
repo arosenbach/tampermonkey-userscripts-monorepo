@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         sample
-// @version      1.0.0
+// @version      1.0.1
 // @description  This is a sample script
 // @author       Antoine Rosenbach <github@rbch.ovh>
 // @downloadURL  https://raw.githubusercontent.com/arosenbach/tampermonkey-userscripts-monorepo/master/packages/_sample/dist/index.js

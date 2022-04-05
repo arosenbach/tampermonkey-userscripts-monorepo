@@ -1,6 +1,6 @@
 {
   "name": "sample",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "This is a sample script",
   "author": "Antoine Rosenbach <github@rbch.ovh>",
